@@ -6,6 +6,7 @@ module Generamba
     def initialize(code_module)
       module_info = {
           'name' => code_module.name,
+          'name_lower_camelized' => code_module.name.camelize(:lower),
           'description' => code_module.description,
           'project_name' => code_module.project_name,
           'product_module_name' => code_module.product_module_name,
